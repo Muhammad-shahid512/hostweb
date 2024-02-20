@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-slate-300 ">
+
+<div>
+    <div class="flex justify-between items-center bg-white shadow-2xl h-[70px] ">
+        <div class="logo">Shahid</div>
+        <div class="search w-[340px]">
+       
+            
+<form class="max-w-md mx-auto">   
+    <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+    <div class="relative">
+        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+            </svg>
+        </div>
+        <input type="search" id="default-search" class="block w-full bg-[#F2F2F2] p-3 ps-10 text-sm border  rounded-lg outline-0  dark:focus:ring-blue-500" placeholder="Search" required />
+        <button type="submit" class="text-white absolute end-2.5 bottom-2 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 p-1 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+    </div>
+</form>
+
+        </div>
+        <div class="bt mr-6 flex justify-between items-center">
+            <button class="mx-4 bg-[#df6e93] rounded-md p-1 text-white hover:scale-90 transition-all transform duration-500" onclick="popUPopen()">Add New Record</button>
+            <div class="relative">
+            <i class=" mx-4 fa-solid fa-bell text-[30px]"></i>
+            <div class="bell bg-[red] min-w-[15px] text-center h-[24px] absolute top-1  rounded-[200px] left-9 text-white"></div>
+        </div>
+            <img  src="profile.png " class="w-[36px] h-[36px] mx-4" alt="">
+        </div>
+    </div>
+</div>
+</div>
+
+                                                   <!-- POP up -->
+
+<div class="pop w-[1200px] bg-[#02AAB0] h-[96%] z-10 absolute transform transition-all duration-500 top-[50%] left-[50%] -translate-x-[50%] 
+scale-0   -translate-y-[50%]">
+<div class="crosbtn absolute right-0 top-0" onclick="closePOPup()">
+<button class="mx-4 bg-[#361e26] rounded-md p-2 my-3  text-white">    <i class="fa fa-multiply p-2 text-[20px]"></i>
+</button>
+</div>
+
+
+<div class="mt-20 absolute top-[35%] left-[40%] -translate-x-[50%] -translate-y-[50%]">
+    <h4 class="text-center ml-28 text-[23px] font-semibold uppercase text-[#221c1c] ">Add Record of new Student</h4>
+
+<form class="formsubmit w-full max-w-sm" >
+   <!-- <label for="">Input</label> -->
+   <!-- <input type="text" class="w-[600px]" name="" id=""> <label for="">Input</label> -->
+   <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-[600px] py-3 px-4 text-gray-700 leading-tight focus:outline-none my-4  focus:bg-white focus:border-purple-500" name="name" id="inline-password" type="text" placeholder="Full Name">
+   <!-- <span class="data text-[red] text-[5px]"></span> -->
+   <!-- Email -->
+   <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-[600px] py-3 px-4 text-gray-700 leading-tight focus:outline-none my-4 focus:bg-white focus:border-purple-500" name="email" id="inline-password" type="email" placeholder="Email">
+   <!-- Phone number -->
+   <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-[600px] py-3 px-4 text-gray-700 leading-tight focus:outline-none my-4 focus:bg-white focus:border-purple-500" name="number" id="inline-password" type="number" placeholder="Phone Number">
+  <!-- PRevious Education school/college -->
+   <input  class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-[600px] py-3 px-4 text-gray-700 leading-tight focus:outline-none my-4 focus:bg-white focus:border-purple-500" name="pre" id="inline-password" type="number" placeholder="Semeter Fee">
+   <!-- Semeter -->
+   <textarea name="se" id="" cols="80" rows="4" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-[600px] py-3 px-4 text-gray-700 leading-tight focus:outline-none my-4 focus:bg-white focus:border-purple-500" placeholder="Address"></textarea>
+   <!-- <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-[600px] py-3 px-4 text-gray-700 leading-tight focus:outline-none my-4 focus:bg-white focus:border-purple-500" id="inline-password" type="text" placeholder="Enter Name" name="se"> -->
+   <!-- Button -->
+   <button class=" bg-blue-700 w-[600px]  text-white font-bold py-2 px-4 border border-blue-700 rounded">
+    Upload
+  </button>
+</form>
+
+</div>
+
+</div>
+
+
+                                                       <!-- Sidebar -->
+<div class="">
+    <!-- Sidebar -->
+    <div class="sidebar absolute  top-0 left-0 w-[240px] h-[100%] bg-[#df6e93] z-1">
+        <!-- Sidebar content goes here -->
+        <div class="logo text-center mt-8 text-3xl font-serif">
+            Brand
+        </div>
+        <hr>
+        <ul class="text-center my-4 cursor-pointer">
+            <div class="group xyz flex justify-center my-3 items-center  bg-gray-50 p-2 transition-all duration-500 ">
+                <img src="browser_9892431.png" class="mx-2 w-[30px] h-[30px]" alt="">
+                <div class=" font-semibold text-black">Dashboard</div>
+            </div>
+            <div class="group xyz flex justify-center items-center hover:bg-gray-50 p-2  transition-all duration-500" onclick="pop1()">
+                <img src="man_4140048.png" class=" w-[30px] h-[30px]" alt="">
+                <div class="group-hover:text-black mx-3 font-semibold text-white hover:" >Student</div>
+            </div> 
+              <div class="group xyz flex justify-center mt-3 items-center hover:bg-gray-50 p-2  transition-all duration-500">
+                <img src="presentation_609001.png" class=" w-[30px] h-[30px]" alt="">
+                <div class="group-hover:text-black mx-3 font-semibold text-white hover:text-black">Teacher</div>
+            </div>
+           <div class="xyz group flex justify-center mt-3 items-center hover:bg-gray-50 p-2  transition-all duration-500">
+                <img src="school-png-15160.png" class=" w-[30px] h-[30px]" alt="">
+                <div class="group-hover:text-black mx-3 font-semibold text-white hover:text-black">School</div>
+            </div>
+           <div class="xyz group flex justify-center mt-3 items-center hover:bg-gray-50 p-2  transition-all duration-500">
+                <img src="earnings_8079768.png" class=" w-[30px] h-[30px]" alt="">
+                <div class="group-hover:text-black mx-3 font-semibold text-white hover:text-black">Money</div>
+            </div>
+            <div class="xyz group flex justify-center mt-3 items-center hover:bg-gray-50 p-2 ">
+                <img src="cogwheel_3953226.png" class=" w-[30px] h-[30px]" alt="">
+                <div class="group-hover:text-black mx-3 font-semibold text-white hover:text-black">Setting</div>
+            </div>
+        
+        </ul>
+    
+    </div>
+
+                                                 <!-- Content -->
+                                                 <!-- main -->
+    <div class="ml-4 mt-4">
+    <div class="ml-[240px]">
+        <div class="content grid lg:grid-cols-4 gap-3">
+            <div class="w-full h-[150px] shadow-2xl bg-white rounded-md">
+                <div class="flex justify-between items-center w-1/2 mx-auto mt-4 ">
+                    <div>
+                        <span class="mx text-[20px] font-extrabold student"></span>
+                        <span class="font-serif">Student</span>
+                    </div>
+                    <img src="student_2784461.png" class="w-[90px] h-[90px]" alt="">
+                </div>
+            </div>
+            <div class="w-full h-[150px] shadow-2xl bg-white rounded-md">
+
+                <div class="flex justify-between items-center w-1/2 mx-auto mt-4 ">
+                    <div>
+                        <span class="mx text-[20px] font-extrabold">40</span>
+                        <span class="font-serif">Teacher</span>
+                    </div>
+                    <img src="male_3048703.png" class="mx-3 w-[90px] h-[90px]" alt="">
+                </div>
+            </div>
+            <div class="w-full h-[150px] shadow-2xl bg-white rounded-md">
+
+                <div class="flex justify-between items-center w-1/2 mx-auto mt-4 ">
+                    <div>
+                        <span class="mx text-[20px] font-extrabold">20</span>
+                        <span class="font-serif">School</span>
+                    </div>
+                    <img src="school_167707.png" class="mx-2 w-[90px] h-[90px]" alt="">
+                </div>
+            </div>
+            <div class="w-full h-[150px] shadow-2xl bg-white rounded-md">
+
+                <div class="flex justify-between items-center w-1/2 mx-auto mt-4 ">
+                    <div>
+                        <span class="tstudent mx text-[22px] font-extrabold"></span>
+                        <span class="font-serif">Money</span>
+                    </div>
+                    <img src="pay_625599.png" class="mx-0 w-[90px] h-[90px]" alt="">
+                </div>
+            </div>
+        </div>
+        <div>
+    
+            <div class="flex items-center gap-0">
+            <div class="container ml-[2px] w-[980px] shadow-2xl bg-white mt-11 h-[330px] overflow-scroll ">
+                <div class="w-[70%] mx-auto flex justify-between items-center pt-4">
+                    <h1 class="text-[20px] font-semibold text-[#949292] ">Recent Payment</h1>
+                    <!-- <button class="mx-4 bg-[#df6e93] rounded-md p-1 text-white " onclick="feeData()">Add New Data</button> -->
+        
+                
+                </div>
+                
+        <hr class="h-[5px] mt-2 bg-[#949292]">
+        
+        <!-- TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com --> 
+<div class="flex flex-col">
+    <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+      <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+        <div class="overflow-hidden">
+          <table class="min-w-full text-left text-sm font-light">
+            <thead class=" border-b font-medium dark:border-neutral-500">
+              <tr>
+                <th scope="col" class="px-6 py-4">Name</th>
+                <th scope="col" class="px-6 py-4">Email</th>
+                <th scope="col" class="px-6 py-4">Phone No</th>
+                <th scope="col" class="px-6 py-4">Fee</th>
+              </tr>
+            </thead>
+            <tbody class="listData">
+              <tr class=" border-b dark:border-neutral-500">
+                <td class="whitespace-nowrap px-6 py-4 font-medium">1</td>
+                <td class="whitespace-nowrap px-6 py-4">Mark</td>
+                <td class="whitespace-nowrap px-6 py-4"></td>
+                <td class="whitespace-nowrap px-6 py-4"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+        
+                <!-- <hr class="h-[20px] font-bold"> -->
+            </div>
+        
+/
+        
+        </div>
+        
+        </div>
+    </div>
+
+</div>
+</div>
+
+
+                                                   <!-- pop ip2 -->
+<div class="pop1class w-[1200px] bg-[#02AAB0] min-h-[96%] overflow-scroll z-10 absolute transform transition-all duration-500 top-[50%] left-[50%] -translate-x-[50%] 
+scale-0   -translate-y-[50%]">
+<div class="crosbtn absolute right-0 top-0" onclick="closePOPup1()">
+<button class="mx-4 bg-[#361e26] rounded-md p-2 my-3  text-white">    <i class="fa fa-multiply p-2 text-[20px]"></i>
+</button>
+<!-- <button>hllo</button> -->
+</div>
+<table class="min-w-full text-left text-sm font-light mt-9">
+    <thead class="border-b font-medium dark:border-neutral-500">
+      <tr>
+        <th scope="col" class="px-6 py-4">Name</th>
+        <th scope="col" class="px-6 py-4">Email</th>
+        <th scope="col" class="px-6 py-4">Phone</th>
+        <th scope="col" class="px-6 py-4">Previous School</th>
+        <th scope="col" class="px-6 py-4">Address</th>
+      </tr>
+    </thead>
+    <tbody class="post1Data">
+      <tr class="border-b dark:border-neutral-500">
+        <td class="whitespace-nowrap px-6 py-4 font-medium"></td>
+        <td class="whitespace-nowrap px-6 py-4"></td>
+        <td class="whitespace-nowrap px-6 py-4"></td>
+        <td class="whitespace-nowrap px-6 py-4"></td>
+        <td class="whitespace-nowrap px-6 py-4"></td>
+      
+        <td class="whitespace-nowrap px-6 py-4" onclick="editData()">  <button class="mx-4 bg-[#df6e93] rounded-md p-[9px]   text-white text-[16px] font-semibold">Edit</button></td>
+        <td class="whitespace-nowrap px-6 py-4" onclick="RemveData()">  <button class="mx-4 bg-[#df6e93] rounded-md p-[9px] text-white font-semibold text-[16px]">Remove</button></td>
+      </tr>
+
+    </tbody>
+
+  </table>
+    <button class="mx-4 bg-[#df6e93] rounded-md p-[9px] text-white font-semibold text-[16px] absolute left-[50%] mt-3 clearall" onclick="clearall()">Remove</button>
+
+  <!-- <button class="">Delete</button> -->
+
+
+
+
+</div>
+
+                                        <!-- pop up three update data -->
+
+
+ <div class="pop2class w-[700px] bg-[#3182a8] min-h-[96%]  z-10 absolute transform transition-all duration-500 top-[50%] left-[50%] -translate-x-[50%] 
+scale-0  -translate-y-[50%]">
+<div class="crosbtn absolute right-0 top-0" onclick="closePOPup3()">
+<button class="mx-4 bg-[#361e26] rounded-md p-2 my-3  text-white">    <i class="fa fa-multiply p-2 text-[20px]"></i>
+</button>
+</div>
+
+<form class="updateForm w-full max-w-sm ml-7 mt-14">
+  <!-- <label for="">Input</label> -->
+  <!-- <input type="text" class="w-[600px]" name="" id=""> <label for="">Input</label> -->
+  <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-[600px] py-3 px-4 text-gray-700 leading-tight focus:outline-none my-4  focus:bg-white focus:border-purple-500" name="name1" id="first1" type="text" placeholder="Full Name">
+  <!-- Email -->
+  <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-[600px] py-3 px-4 text-gray-700 leading-tight focus:outline-none my-4 focus:bg-white focus:border-purple-500" name="name2" id="first2" type="email" placeholder="Email">
+  <!-- Phone number -->
+  <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-[600px] py-3 px-4 text-gray-700 leading-tight focus:outline-none my-4 focus:bg-white focus:border-purple-500" name="name3" id="first3" type="number" placeholder="Phone Number">
+ <!-- PRevious Education school/college -->
+  <input  class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-[600px] py-3 px-4 text-gray-700 leading-tight focus:outline-none my-4 focus:bg-white focus:border-purple-500" name="name3" id="first4" type="text" placeholder="Previous School / College">
+  <!-- Semeter -->
+  <textarea name="name4" id="first5" cols="80" rows="4" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-[600px] py-3 px-4 text-gray-700 leading-tight focus:outline-none my-4 focus:bg-white focus:border-purple-500" placeholder="Address"></textarea>
+  <!-- <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-[600px] py-3 px-4 text-gray-700 leading-tight focus:outline-none my-4 focus:bg-white focus:border-purple-500" id="inline-password" type="text" placeholder="Enter Name" name="se"> -->
+  <!-- Button -->
+  <button class=" bg-blue-700 w-[600px]  text-white font-bold py-2 px-4 border border-blue-700 rounded">
+   Upload
+ </button>
+</form>
+</div>
+
+
+                               <!-- pop up fee voccker -->
+
+
+     <div class="pop3class w-[1200px] bg-[#3182a8] min-h-[96%]  z-10 absolute transform transition-all duration-500 top-[50%] left-[50%] -translate-x-[50%] 
+scale-0  -translate-y-[50%]">
+<div class="crosbtn absolute right-0 top-0" onclick="closefee()">
+<button class="mx-4 bg-[#361e26] rounded-md p-2 my-3  text-white">    <i class="fa fa-multiply p-2 text-[20px]"></i>
+</button>
+</div>
+
+<table class="min-w-full text-left text-sm font-light mt-9">
+  <thead class="border-b font-medium dark:border-neutral-500">
+    <tr>
+      <th scope="col" class="px-6 py-4">Name</th>
+      <th scope="col" class="px-6 py-4">Email</th>
+      <th scope="col" class="px-6 py-4">Phone</th>
+      <th scope="col" class="px-6 py-4">Fee</th>
+    </tr>
+  </thead>
+  <tbody class="post2Data">
+    <tr class="border-b dark:border-neutral-500">
+      <td class="whitespace-nowrap px-6 py-4 font-medium"></td>
+      <td class="whitespace-nowrap px-6 py-4"></td>
+      <td class="whitespace-nowrap px-6 py-4"></td>
+      <td class="whitespace-nowrap px-6 py-4"></td>
+    
+      <td class="whitespace-nowrap px-6 py-4" onclick="addfee()">  <button class="mx-4 bg-[#df6e93] rounded-md p-[9px]   text-white text-[16px] font-semibold">ADD FEE</button></td>
+      <!-- <td class="whitespace-nowrap px-6 py-4" onclick="RemveData()">  <button class="mx-4 bg-[#df6e93] rounded-md p-[9px] text-white font-semibold text-[16px]">Remove</button></td> -->
+    </tr>
+
+  </tbody>
+</table>
+
+</div>
+
+
+<script src="implement.js"></script>
+
+
+</body>
+</html>
